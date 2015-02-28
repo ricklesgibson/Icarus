@@ -1,17 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
-  get 'users/index'
-
-  get 'users/create'
-
-  get 'users/destroy'
-
-  get 'users/show'
-
-  get 'users/edit'
-
-  get 'users/update'
+  resource :sessions, only: [:new, :create, :destroy] #this is a singular resource, not resources.
+  resources :users do
+    resources :photos, only: [:index, :new, :create]
+  end
+  resources :photos
+  root 'users#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

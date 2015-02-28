@@ -42,7 +42,7 @@ class UsersController < ApplicationController
     #respond_to do |format|
       if user.save
         session["user_id"]=user.id.to_s
-          UserMailer.welcome(user).deliver_now
+          #UserMailer.welcome(user).deliver_now
           redirect_to edit_user_path(user)
         #format.html { redirect_to @user, notice: 'user was successfully created.' }
         #format.json { render :show, status: :created, location: @order }
