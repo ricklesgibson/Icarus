@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+  get 'owners/new'
+
+  get 'owners/index'
+
+  get 'owners/edit'
+
+  get 'owners/show'
+
+  get 'owners/create'
+
+  get 'owners/update'
+
+  get 'owners/destroy'
+
+  get 'pilots/index'
+
+  get 'pilots/new'
+
+  get 'pilots/show'
+
+  get 'pilots/create'
+
+  get 'pilots/update'
+
+  get 'pilots/edit'
+
+  get 'pilots/destroy'
+
   resource :sessions, only: [:new, :create, :destroy] #this is a singular resource, not resources.
   resources :users do
     resources :photos, only: [:index, :new, :create]
