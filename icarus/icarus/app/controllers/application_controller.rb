@@ -6,4 +6,10 @@ class ApplicationController < ActionController::Base
   def current_user
      User.where(id:session["user_id"]).first
   end
+  def current_owner
+     Owner.where(id:session["owner_id"]).first
+  end
+  def current_pilot
+     Pilot.where(id:session["pilot_id"]).first
+  end
 end

@@ -1,0 +1,7 @@
+  <% @event.each do |u| %>
+       <!-- Event User ID:<p><%#= u.user_id %></p> -->
+       <%= link_to u.location, event_path(u) %>
+
+     
+
+  <% end %>

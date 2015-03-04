@@ -1,0 +1,20 @@
+<%= form_for(@event) do |f| %>
+
+        <div class="field">
+          
+     Start Time     <%= f.datetime_local_field :start_time, placeholder: "Start Time" %>
+        </div>
+
+        <div class="field">
+   End Time       <%= f.datetime_local_field :end_time, placeholder: "End Time" %>
+        </div>
+
+        <div class="field">
+          <%= f.text_field :location, placeholder: "Location" %>
+        </div>
+
+
+        <div class="actions">
+          <%= f.submit "Create An Event", class: "btn btn-primary" %>
+        </div>
+      <% end %>

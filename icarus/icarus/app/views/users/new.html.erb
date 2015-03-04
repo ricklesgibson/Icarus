@@ -1,5 +1,5 @@
  <%= bootstrap_form_for(@user) do |f| %><br />
-   <%= f.text_field :email, hide_label: true,  placeholder: "e-mail" %>
+   <%= f.email_field :email, hide_label: true,  placeholder: "e-mail" %>
    <%= f.text_field :first_name, hide_label: true, placeholder: "First Name"  %>
    <%= f.text_field :last_name, hide_label: true, placeholder: "Last Name"  %>
    <%= f.primary "Make My Icarus!" %>
