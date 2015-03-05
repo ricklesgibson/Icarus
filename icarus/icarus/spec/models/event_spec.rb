@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Event, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "has a valid factory"
+
+ it "is invalid without a start_time"
+
+ it "is invalid without an end_time"
+
+ it "is invalid without a location"
 end
