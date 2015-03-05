@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe UsersController, type: :controller do
 
@@ -20,6 +21,13 @@ RSpec.describe UsersController, type: :controller do
     it "returns http success" do
       get :create
       expect(response).to have_http_status(:success)
+    end
+
+    it "saves user in the database" do
+     FactoryGirl.create(:user)
+     last_user = User.last.id
+     FactoryGirl.create(:user)
+     expect(User.last.id).to eq(last_user + 1)
     end
   end
 
