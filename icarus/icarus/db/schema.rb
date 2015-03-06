@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150306000256) do
+ActiveRecord::Schema.define(version: 20150306000617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,8 +28,12 @@ ActiveRecord::Schema.define(version: 20150306000256) do
     t.integer  "zip"
     t.datetime "last_charge"
     t.datetime "last_wash"
+    t.integer  "owner_id"
+    t.integer  "pilot_id"
   end
 
+  add_index "events", ["owner_id"], name: "index_events_on_owner_id", using: :btree
+  add_index "events", ["pilot_id"], name: "index_events_on_pilot_id", using: :btree
   add_index "events", ["user_id"], name: "index_events_on_user_id", using: :btree
 
   create_table "owners", force: :cascade do |t|
@@ -71,5 +75,7 @@ ActiveRecord::Schema.define(version: 20150306000256) do
     t.string   "account_type",        default: "user"
   end
 
+  add_foreign_key "events", "owners"
+  add_foreign_key "events", "pilots"
   add_foreign_key "events", "users"
 end
