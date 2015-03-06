@@ -9,8 +9,14 @@
   max-width: 80%
 }
 
+.videoContainer {
+  display: cover;
+}
+
 .jumbotron {
-  position: relative;
+//  position: absolute;
+  margin: 0 auto;
+  z-index: 999;
 }
 
 #ownerButton {
