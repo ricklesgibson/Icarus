@@ -1,3 +1,24 @@
 // Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//===============Welcome page=============
+
+#container {
+  position: relative;
+  max-width: 80%
+}
+
+.jumbotron {
+  position: relative;
+}
+
+#ownerButton {
+  float: left;
+  margin-left: 200px;
+}
+
+#pilotButton {
+  float: right;
+  margin-right: 200px;
+}
