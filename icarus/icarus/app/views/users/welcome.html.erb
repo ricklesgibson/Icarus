@@ -1,3 +1,67 @@
+<!--====================== Welcome to Parallax Land =====================-->
+<section class="module parallax parallax-1">
+  <div class="container">
+    <h1>Rick Adam Matt = RAM</h1>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor...</p>
+  </div>
+</section>
+
+<section class="module parallax parallax-2">
+  <div class="container">
+    <h1>RAM will RAM you</h1>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor...</p>
+  </div>
+</section>
+
+<section class="module parallax parallax-3">
+  <div class="container">
+    <h1>Ram!</h1>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor...</p>
+  </div>
+</section>
+
+<!-- These are the parallax functions; we select speed and background position. -->
+<script type="text/javascript">
+
+    (function(){
+
+        var parallax = document.querySelectorAll(".parallax"),
+                speed = .5;
+
+        window.onscroll = function(){
+            [].slice.call(parallax).forEach(function(el,i){
+
+                var windowYOffset = window.pageYOffset,
+                        elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+                el.style.backgroundPosition = elBackgrounPos;
+
+            });
+        };
+
+    })();
+</script>
+
+
+
 
 <!--====================== HTML5 Video AutoPlay =====================-->
 
