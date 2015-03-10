@@ -1,0 +1,56 @@
+<div class="container">
+   <div class="well">
+  <h1>Welcome to Icarus</h1>
+  <h2>Please Create a New Owner Account Below</h2>
+  </div>
+   
+
+
+
+
+ <%= bootstrap_form_for(@owner) do |f| %><br />
+   <div class="row">
+     <div class="col-md-4 col-md-offset-2">
+   <%= f.text_field :first_name, hide_label: true, placeholder: "First Name"  %>
+     </div>
+     <div class="col-md-4">
+   <%= f.text_field :last_name, hide_label: true, placeholder: "Last Name"  %>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-4 col-md-offset-2">
+   <%= f.email_field :email, hide_label: true,  placeholder: "E-mail" %>
+     </div>
+     <div class="col-md-4">
+   <%= f.text_field :phone, hide_label: true, placeholder: "Phone Number" %>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-4 col-md-offset-2">
+   <%= f.password_field :password, hide_label: true, placeholder: "Create Password" %>
+     </div>
+     <div class="col-md-4">
+   <%= f.password_field :password_confirmation, hide_label: true, placeholder: "Password Confirmation" %>
+     </div>
+   </div>
+   <div class="col-md-8 col-md-offset-2">
+   <%= f.text_field :street_address, hide_label: true, placeholder: "Address" %>
+   </div>
+   <div class="col-md-8 col-md-offset-2">
+   <%= f.text_field :city, hide_label: true, placeholder: "City" %>
+   </div>
+   <div class="col-md-8 col-md-offset-2">
+   <%= f.text_field :state, hide_label: true, placeholder: "State" %>
+   </div>
+   <div class="col-md-8 col-md-offset-2">
+   <%= f.text_field :zip, hide_label: true, placeholder: "Enter Zipcode" %> 
+   </div>
+   <div class="col-md-2 col-md-offset-8">Upload Picture
+   <%= f.file_field :avatar, hide_label: true %>
+   </div>
+   <div class="col-md-2 col-md-offset-5">
+   <%= f.primary "Create New User" %>
+   </div>
+  <% end %>
+  
+</div>

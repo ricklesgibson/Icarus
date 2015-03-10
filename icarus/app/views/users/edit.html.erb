@@ -1,0 +1,10 @@
+ <%= bootstrap_form_for(@user) do |f| %>
+    <%= f.text_field :email, hide_label: true,  placeholder: "e-mail" %>
+    <%= f.password_field :password, hide_label: true, placeholder: "Password"  %>
+    <%#= f.password_field :password_confirmation, hide_label: true, placeholder: "Password Confirmation" %>
+    <%= f.text_field :first_name, hide_label: true, placeholder: "Full Name"  %>
+    <%#= f.text_field :last_name, hide_label: true, placeholder: "Last Name"  %>
+    <%#= f.text_field :bio_text,  hide_label: true,placeholder: "About you!" %>
+    <%#= f.file_field :avatar, hide_label: true, placeholder: "Profile Picture", :class => "btn btn-default btn-primary" %>
+    <%= f.primary "Create User" %>
+  <% end %>
