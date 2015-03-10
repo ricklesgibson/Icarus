@@ -37,7 +37,7 @@ class UsersController < ApplicationController
 
   def create 
 
-    user = User.new((params.require(:user).permit(:email, :first_name, :last_name)).merge(password:'12345'))
+    user = User.new((params.require(:user).permit(:email, :first_name, :last_name, :street_address, :city, :state, :zip, :phone)).merge(password:'12345'))
     
     #respond_to do |format|
       if user.save
