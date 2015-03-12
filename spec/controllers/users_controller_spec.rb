@@ -4,13 +4,15 @@ require 'spec_helper'
 RSpec.describe UsersController, type: :controller do
 
   describe "GET #new" do
-    it "returns http success" do
+    before(:each) do
       get :new
+    end
+    it "returns http success" do
       expect(response).to have_http_status(:success)
     end
     it "doesn't post to the database" do
-      expect{User.create}.to change(User, :count).by(0)
-      # expect{User.create}.to_not change(User, :count)
+      # expect{User.new}.to change(User, :count).by(0)
+      expect{User.new}.to_not change(User, :count)
     end
   end
 

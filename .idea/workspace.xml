@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21c7bc33-7000-4e6e-8c8a-1ca5dca7dd00" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/factories/users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/features/sessions_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/helpers/events_helper_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/helpers/owners_helper_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/helpers/pilots_helper_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/helpers/sessions_helper_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/helpers/users_helper_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/create.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/destroy.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/edit.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/index.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/new.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/show.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/owners/update.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/create.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/destroy.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/edit.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/index.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/new.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/show.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/pilots/update.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/sessions/create.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/sessions/destroy.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/sessions/new.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/create.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/destroy.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/edit.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/index.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/new.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/show.html.erb_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/views/users/update.html.erb_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/2f5173deea6c795b8fdde723bb4b63af" afterPath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/2f5173deea6c795b8fdde723bb4b63af" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/da866f4d906ea0b921eea9747cc1c0e3" afterPath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/da866f4d906ea0b921eea9747cc1c0e3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/ddf93e86608be7d6d7e16cf1bfb7779a" afterPath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/ddf93e86608be7d6d7e16cf1bfb7779a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/f7cbd26ba1d28d48de824f0e94586655" afterPath="$PROJECT_DIR$/tmp/cache/assets/test/sprockets/f7cbd26ba1d28d48de824f0e94586655" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/events_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/events_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/owners_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/owners_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/pilots_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/pilots_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/users_logins_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/users_logins_spec.rb" />
     </list>
     <ignored path="Icarus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,8 +32,8 @@
       <file leaf-file-name="users_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11042945" vertical-offset="486" max-vertical-offset="1080">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33128834" vertical-offset="18" max-vertical-offset="1188">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -594,7 +553,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="828" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="828" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -706,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11042945" vertical-offset="486" max-vertical-offset="1080">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33128834" vertical-offset="18" max-vertical-offset="1188">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
