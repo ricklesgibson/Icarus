@@ -1,21 +1,31 @@
 class UsersController < ApplicationController
+  respond_to :json, :html
+
   def index
     @users = User.all 
+    respond_with @users
   end
   def new
     @user = User.new
   end
 
   def show
-    @user = User.find(params[:id])
+    
+     
+         @user = User.find(params[:id])
     @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][0]["weather"][0]["main"]
     @weathers = Array.new
     i = 0
-    while i <= 5 do 
+   while i <= 5 do 
       @weathers.push(HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][i]["weather"][0]["main"])
-      i +=1
-    end
+     i +=1
+   end
 
+    
+
+    # format.html # show.html.erb
+     respond_with @user 
+    
   end
     
   def edit
