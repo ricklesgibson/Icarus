@@ -8,8 +8,14 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][1]["weather"][0]["main"]
-    # @weathers = 
+    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][0]["weather"][0]["main"]
+    @weathers = Array.new
+    i = 0
+    while i <= 5 do 
+      @weathers.push(HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][i]["weather"][0]["main"])
+      i +=1
+    end
+
   end
     
   def edit

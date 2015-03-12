@@ -11,6 +11,11 @@
 <%= @user.phone %><br />
 <%= @user.street_address %><br />
 <hr />
-<%= @weather %>
+<%= @weather %> <hr />
+<% @weathers.each do |x| %>
+  <%= x %>
+  <br />
+  <% end %>
+
 </h2>
 </div>

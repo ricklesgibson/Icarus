@@ -1,49 +1,9 @@
-<!--====================== Welcome to Parallax Land =====================-->
 
-  <div class="container-well">
-    <div id = 'videoContainer'>
-        <%= video_tag("promo.mp4", :autoplay => true) %>
-           
-
-        </video>
+  
+    <div id='videoContainer'>
+        <%= video_tag("tesla_road.mp4", :autoplay => true, :loop => true) %>    
     </div>
-  </div>
-
-
-
-
-<!-- These are the parallax functions; we select speed and background position. -->
-<script type="text/javascript">
-
-    (function(){
-
-        var parallax = document.querySelectorAll(".parallax"),
-                speed = .5;
-
-        window.onscroll = function(){
-            [].slice.call(parallax).forEach(function(el,i){
-
-                var windowYOffset = window.pageYOffset,
-                        elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
-                el.style.backgroundPosition = elBackgrounPos;
-
-            });
-        };
-
-    })();
-</script>
-
-
-
-
-
-    
-
-
-  <!--====================== Jumbotron =====================-->
-
-
+ 
         <div class="jumbotron">
           <h1>Icarus</h1>
           <p>Electrify Your Life</p>
@@ -58,6 +18,3 @@
           <button type="button" class="btn btn-primary">New Pilot</button>
         </div>
     </div>
-
-    </body>
-</html>
