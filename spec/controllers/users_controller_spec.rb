@@ -8,6 +8,10 @@ RSpec.describe UsersController, type: :controller do
       get :new
       expect(response).to have_http_status(:success)
     end
+    it "doesn't post to the database" do
+      expect{User.create}.to change(User, :count).by(0)
+      # expect{User.create}.to_not change(User, :count)
+    end
   end
 
   describe "GET #index" do
@@ -18,16 +22,8 @@ RSpec.describe UsersController, type: :controller do
   end
 
   describe "GET #create" do
-    it "returns http success" do
-      get :create
-      expect(response).to have_http_status(:success)
-    end
-
-    it "saves user in the database" do
-     FactoryGirl.create(:user)
-     last_user = User.last.id
-     FactoryGirl.create(:user)
-     expect(User.last.id).to eq(last_user + 1)
+    it "posts to the database and is going to have a good time" do
+      expect{User.create}.to change(User, :count).by(1)
     end
   end
 
