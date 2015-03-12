@@ -29,6 +29,10 @@ RSpec.describe User, type: :model do
     expect(FactoryGirl.build(:user, email: nil)).to_not be_valid
    end
 
+   it  "   " do
+
+   end
+
    
 
  end
