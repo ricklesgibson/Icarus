@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][1]["weather"][0]["main"]
-    @weathers = 
+    # @weathers = 
   end
     
   def edit
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
 
   def create 
 
-    user = User.new((params.require(:user).permit(:email, :first_name, :last_name, :street_address, :city, :state, :zip, :phone)).merge(password:'12345'))
+    user = User.new((params.require(:user).permit(:email, :first_name, :last_name)).merge(password:'12345'))
     
     #respond_to do |format|
       if user.save
