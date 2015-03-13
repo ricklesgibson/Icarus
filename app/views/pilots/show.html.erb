@@ -1,2 +1,19 @@
-<h1>Pilots#show</h1>
-<p>Find me in app/views/pilots/show.html.erb</p>
+<%= render "layouts/nav" %>
+<div class="container">
+  <div class="well">
+<h1>Welcome, You Sexy Pilot , You</h1> 
+  </div>
+<p>Find Your Information Below</p>
+
+
+<h2><%= @owner.first_name %><br />
+<%= @owner.last_name %><br />
+<%= @owner.email %><br />
+<%= @owner.phone %><br />
+<%= @owner.street_address %><br />
+<hr />
+<%= @forecast %>
+<%= @weathers %>
+
+</h2>
+</div>
