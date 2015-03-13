@@ -13,6 +13,8 @@
 //  position: absolute;
   margin: 0 auto;
   z-index: 999;
+
+
 }
 
 #ownerButton {
@@ -25,16 +27,38 @@
   margin-right: 200px;
 }
 
+.jumbotron .textContrast {
+  color: whitesmoke;
+}
 
 /* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+// .container {
+//   max-width: 960px;
+//   margin: 0 auto;
+// }
+
+#videoOverlays {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  // min-height: 370px;
+  background-color: transparent;
+  z-index: 3000000;
+  margin-top: 30%;
+
 }
 
- 
+#videoBox {
+
+  position: relative;
+}
+
+
+#videoOverlays .jumbotron {
+  background-color: transparent;
+}
 
 @media all and (min-width: 600px) {
   section.module h2 {

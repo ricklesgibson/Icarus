@@ -1,20 +1,27 @@
 
   
     <div id='videoContainer'>
-        <%= video_tag("tesla_road.mp4", :autoplay => true, :loop => true) %>    
-    </div>
- 
+      <div id="videoOverlays" class="container-well">
         <div class="jumbotron">
-          <h1>Icarus</h1>
-          <p>Electrify Your Life</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Sign Up For Icarus</a></p>
+          <div class="textContrast">
+            <h1>ICARUS</h1>
+            <p>Electrify Your Life</p>
+          </div>
+            <p><a class="btn btn-danger btn-lg" href="#" role="button">Sign Up For Icarus</a></p>
         </div>
 
-        <div id = 'ownerButton'>
+
+      </div>
+        <%= video_tag("tesla_road.mp4", :autoplay => true, :loop => true, :id => 'videoBox') %>    
+    </div>
+ 
+        
+
+        <!-- <div id = 'ownerButton'>
         <button type="button" class="btn btn-primary">New Owner</button>
         </div>
 
         <div id = 'pilotButton'>
           <button type="button" class="btn btn-primary">New Pilot</button>
-        </div>
+        </div> -->
     </div>
