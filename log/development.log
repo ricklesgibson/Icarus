@@ -20525,3 +20525,3610 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 
 Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 11:46:01 -0700
+
+
+Started GET "/sessions/new" for ::1 at 2015-03-13 12:21:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (342.3ms)
+Completed 200 OK in 588ms (Views: 551.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-03-13 12:21:17 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 12:21:18 -0700
+
+
+Started POST "/sessions" for ::1 at 2015-03-13 12:21:25 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zwf/EyXk/oP673pEQsT/lvN1FaowcISN0GK83LgBut68Mj2oWvr1mBf5oFL1FwxK0PpuMwpHR+wb2fqEkWL/lQ==", "user"=>{"email"=>"ricklesgibson@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log me in!"}
+  [1m[35mUser Load (18.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ricklesgibson@gmail.com"]]
+Completed 500 Internal Server Error in 36ms
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/sessions_controller.rb:10:in `create'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/7e9cd8c7c60a09ee/variables" for ::1 at 2015-03-13 12:21:25 -0700
+
+
+Started POST "/sessions" for ::1 at 2015-03-13 12:21:28 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zwf/EyXk/oP673pEQsT/lvN1FaowcISN0GK83LgBut68Mj2oWvr1mBf5oFL1FwxK0PpuMwpHR+wb2fqEkWL/lQ==", "user"=>{"email"=>"ricklesgibson@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log me in!"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ricklesgibson@gmail.com"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/sessions_controller.rb:10:in `create'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/8831f7a450923f8c/variables" for ::1 at 2015-03-13 12:21:28 -0700
+
+
+Started POST "/sessions" for ::1 at 2015-03-13 12:22:30 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zwf/EyXk/oP673pEQsT/lvN1FaowcISN0GK83LgBut68Mj2oWvr1mBf5oFL1FwxK0PpuMwpHR+wb2fqEkWL/lQ==", "user"=>{"email"=>"ricklesgibson@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log me in!"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ricklesgibson@gmail.com"]]
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/sessions_controller.rb:10:in `create'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/e7acfbad2e88257b/variables" for ::1 at 2015-03-13 12:22:30 -0700
+
+
+Started POST "/sessions" for ::1 at 2015-03-13 12:22:57 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zwf/EyXk/oP673pEQsT/lvN1FaowcISN0GK83LgBut68Mj2oWvr1mBf5oFL1FwxK0PpuMwpHR+wb2fqEkWL/lQ==", "user"=>{"email"=>"ricklesgibson@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log me in!"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ricklesgibson@gmail.com"]]
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 71ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/3" for ::1 at 2015-03-13 12:22:57 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 66937ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/users/3" for ::1 at 2015-03-13 12:24:04 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 65483ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/171e5474aab29d97/variables" for ::1 at 2015-03-13 12:25:10 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-03-13 12:25:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 67628ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/users/3" for ::1 at 2015-03-13 12:26:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6861ms (Views: 122.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 12:26:24 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 12:26:25 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-03-13 12:26:40 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 65503ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/5fd3055126aec3e6/variables" for ::1 at 2015-03-13 12:27:46 -0700
+
+
+Started GET "/users/3" for ::1 at 2015-03-13 12:29:18 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8393ms (Views: 113.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 12:29:27 -0700
+
+
+Started GET "/" for ::1 at 2015-03-13 13:19:18 -0700
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 118ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:19:18 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:19:27 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:19:35 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:19:43 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:19:52 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 13:19:56 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 111ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 13:19:57 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:20:11 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:20:19 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:20:27 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:20:36 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:20:44 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:20:53 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:01 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:09 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:18 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:26 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:35 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:43 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:21:51 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:00 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:08 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:17 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:25 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:33 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:42 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:50 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:22:59 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:07 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:15 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:24 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:32 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:41 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:49 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:23:57 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:06 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:14 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:23 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:31 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:39 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:48 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:24:56 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:05 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:13 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:21 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:30 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:38 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:47 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:25:55 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:26:03 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:26:12 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:26:20 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:26:29 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:26:37 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 13:26:45 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 66855ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started POST "/__better_errors/f2a7e3860b0fe5b7/variables" for ::1 at 2015-03-13 13:27:52 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 13:29:59 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 66696ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/6f781009ff2a88df/variables" for ::1 at 2015-03-13 13:31:06 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 13:31:14 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed   in 6527ms
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 13:31:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 62259ms
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/745d8500d06b260a/variables" for ::1 at 2015-03-13 13:32:35 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 13:33:38 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 111415ms (Views: 207.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 13:35:30 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 13:39:19 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 65635ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/5911a090ebf57e35/variables" for ::1 at 2015-03-13 13:40:25 -0700
+
+
+Started GET "/users/2" for ::1 at 2015-03-13 13:42:55 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 66684ms
+
+Errno::ECONNREFUSED - Connection refused - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:863:in `do_start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:852:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/users/2" for ::1 at 2015-03-13 13:44:02 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 1918764ms
+
+Errno::ETIMEDOUT - Operation timed out - connect(2) for "api.openweathermap.org" port 80:
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:879:in `block in connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/timeout.rb:74:in `timeout'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:878:in `connect'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1452:in `begin_transport'
+  aws-sdk-v1 (1.63.0) lib/aws/core/http/patch.rb:25:in `new_transport_request'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1383:in `request'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1376:in `block in request'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:853:in `start'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/net/http.rb:1374:in `request'
+  httparty (0.13.3) lib/httparty/request.rb:98:in `perform'
+  httparty (0.13.3) lib/httparty.rb:539:in `perform_request'
+  httparty (0.13.3) lib/httparty.rb:475:in `get'
+  httparty (0.13.3) lib/httparty.rb:577:in `get'
+  app/controllers/users_controller.rb:16:in `show'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 14:17:07 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 72493ms (Views: 175.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:18:20 -0700
+
+
+Started GET "/users/1" for ::1 at 2015-03-13 14:19:28 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed   in 32381ms
+
+
+Started GET "/" for ::1 at 2015-03-13 14:20:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 203ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 14:20:13 -0700
+
+
+Started GET "/users" for ::1 at 2015-03-13 14:20:16 -0700
+Processing by UsersController#index as HTML
+  Rendered layouts/_nav.html.erb (0.5ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 107ms (Views: 93.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:20:16 -0700
+
+
+Started GET "/users/1/edit" for ::1 at 2015-03-13 14:20:32 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/users/3/edit
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2015-03-13 14:20:32 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", "3"]]
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/edit.html.erb within layouts/application (235.5ms)
+Completed 200 OK in 320ms (Views: 318.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:20:32 -0700
+
+
+Started GET "/users/3/edit" for ::1 at 2015-03-13 14:21:14 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", "3"]]
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered users/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:21:14 -0700
+
+
+Started GET "/" for ::1 at 2015-03-13 14:21:32 -0700
+Processing by UsersController#welcome as HTML
+  Rendered users/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 84ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/assets/tesla_road-8bdde3d37593027314fdbde10fbbc475.mp4" for ::1 at 2015-03-13 14:21:32 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:21:35 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 84ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:21:35 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:21:49 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:21:49 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:24:05 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:24:05 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:24:36 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:24:36 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:31:41 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 240ms (Views: 225.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:31:42 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:50 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:50 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:31:50 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:50 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:31:50 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:31:50 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:32:30 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 104ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:32:30 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:33:06 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered users/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 83ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:33:06 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:33:19 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 83ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:33:20 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:33:39 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:33:39 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:33:59 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 88ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:33:59 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:34:10 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 90ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:34:10 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:34:17 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 83ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:34:17 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:34:35 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:34:35 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:35:08 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 81ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:08 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:35:08 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:08 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:08 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:35:08 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:35:09 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:35:30 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (37.1ms)
+Completed 500 Internal Server Error in 41ms
+
+NoMethodError - undefined method `danger' for #<BootstrapForm::FormBuilder:0x007fc6612f5718>:
+  app/views/users/new.html.erb:55:in `block in _app_views_users_new_html_erb__4591521282592519761_70245010572660'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.0) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  bootstrap_form (2.3.0) lib/bootstrap_form/helper.rb:25:in `block in bootstrap_form_for'
+  bootstrap_form (2.3.0) lib/bootstrap_form/helper.rb:38:in `temporarily_disable_field_error_proc'
+  bootstrap_form (2.3.0) lib/bootstrap_form/helper.rb:24:in `bootstrap_form_for'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__4591521282592519761_70245010572660'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/32a79541b3783b7b/variables" for ::1 at 2015-03-13 14:35:31 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:35:38 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 91ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:35:38 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:35:44 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError - undefined method `warning' for #<BootstrapForm::FormBuilder:0x007fc6672f5140>:
+  app/views/users/new.html.erb:55:in `block in _app_views_users_new_html_erb__4591521282592519761_70245055786140'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.0) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  bootstrap_form (2.3.0) lib/bootstrap_form/helper.rb:25:in `block in bootstrap_form_for'
+  bootstrap_form (2.3.0) lib/bootstrap_form/helper.rb:38:in `temporarily_disable_field_error_proc'
+  bootstrap_form (2.3.0) lib/bootstrap_form/helper.rb:24:in `bootstrap_form_for'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__4591521282592519761_70245055786140'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ricklesgibson/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/193cfa5f488ffeed/variables" for ::1 at 2015-03-13 14:35:44 -0700
+
+
+Started POST "/__better_errors/193cfa5f488ffeed/variables" for ::1 at 2015-03-13 14:35:48 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:37:00 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 121ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:37:00 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:37:04 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 163ms (Views: 161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:37:05 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:38:52 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 90ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:52 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:38:53 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:38:59 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 85ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:38:59 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:39:04 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 84ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:39:05 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:39:09 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 82ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:39:10 -0700
+
+
+Started GET "/users/new" for ::1 at 2015-03-13 14:39:27 -0700
+Processing by UsersController#new as HTML
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 94ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/events-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/users-c8bfa8f5019c15b35d25b77a40eab002.css?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/pilots-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/owners-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/application-95a0306e8f25d143b71ca4e541ac055e.css?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/events-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/owners-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/pilots-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700
+
+
+Started GET "/assets/application-bea1a91b18008d861eb8174f49b51901.js?body=1" for ::1 at 2015-03-13 14:39:27 -0700

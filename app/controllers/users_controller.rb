@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     
      
     @user = User.find(params[:id])
-    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"]
+    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=San+Francisco,ca&mode=JSON&APPID=c64fb5dceb58cb7f615da8f7dc80ec70').parsed_response["list"]
     if @weather
         @weathers = Array.new
         i = 0
@@ -29,8 +29,7 @@ class UsersController < ApplicationController
         # format.html # show.html.erb
          respond_with @user 
     else
-      @weather = "Our weatherman is out to lunch"
-      @weathers = "Our weatherman is out to lunch"
+      @forecast = "Our weatherman is out to lunch"
     end
   end
     
@@ -61,7 +60,7 @@ class UsersController < ApplicationController
 
   def create 
 
-    user = User.new(user_params).merge(password:'12345')
+    user = User.new((user_params).merge(password:'12345'))
     
     #respond_to do |format|
       if user.save
