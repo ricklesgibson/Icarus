@@ -61,7 +61,7 @@ class UsersController < ApplicationController
 
   def create 
 
-    user = User.new(user_params).merge(password:'12345')
+    user = User.new((user_params).merge(password:'12345'))
     
     #respond_to do |format|
       if user.save
