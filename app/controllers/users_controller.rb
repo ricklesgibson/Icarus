@@ -12,20 +12,26 @@ class UsersController < ApplicationController
   def show
     
      
-         @user = User.find(params[:id])
-    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][0]["weather"][0]["main"]
-    @weathers = Array.new
-    i = 0
-   while i <= 5 do 
-      @weathers.push(HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"][i]["weather"][0]["main"])
-     i +=1
-   end
-
-    
-
-    # format.html # show.html.erb
-     respond_with @user 
-    
+    @user = User.find(params[:id])
+    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=Santa_monica,ca&mode=JSON').parsed_response["list"]
+    if @weather
+        @weathers = Array.new
+        i = 0
+       while i <= 5 do 
+          @weathers.push(@weather[i]["weather"][0]["main"])
+         i +=1
+       end
+       if @weathers.include? 'rain'
+          @forecast = "Looks like rain!"
+        else
+          @forecast = "Clear skies! Happy driving!"
+        end
+        # format.html # show.html.erb
+         respond_with @user 
+    else
+      @weather = "Our weatherman is out to lunch"
+      @weathers = "Our weatherman is out to lunch"
+    end
   end
     
   def edit
@@ -55,7 +61,7 @@ class UsersController < ApplicationController
 
   def create 
 
-    user = User.new((params.require(:user).permit(:email, :first_name, :last_name)).merge(password:'12345'))
+    user = User.new(user_params).merge(password:'12345')
     
     #respond_to do |format|
       if user.save
@@ -78,6 +84,6 @@ private
   end
 
   def user_params
-   params.require(:user).permit(:email, :avatar)
+   params.require(:user).permit(:email, :avatar, :first_name, :last_name, :street_address, :city, :state, :zip, :phone)
   end
 end

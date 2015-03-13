@@ -40,8 +40,8 @@ class OwnersController < ApplicationController
     owner = Owner.new((params.require(:owner).permit(:email, :first_name, :last_name)).merge(password:'12345'))
     
     #respond_to do |format|
-      if Owner.save
-        session["owner_id"]=Owner.id.to_s
+      if owner.save
+        session["owner_id"]=owner.id.to_s
           #ownerMailer.welcome(owner).deliver_now
           redirect_to edit_owner_path(owner)
         #format.html { redirect_to @owner, notice: 'owner was successfully created.' }
