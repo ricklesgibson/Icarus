@@ -1,3 +1,4 @@
+<%= render "layouts/nav" %>
  <%= bootstrap_form_for(@user) do |f| %>
     <%= f.text_field :email, hide_label: true,  placeholder: "e-mail" %>
     <%= f.password_field :password, hide_label: true, placeholder: "Password"  %>
