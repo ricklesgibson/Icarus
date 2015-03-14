@@ -9,6 +9,7 @@ RSpec.describe User, type: :model do
     before (:each) do
       @user = User.create
     end
+
    it "has a valid factory" do
     expect(FactoryGirl.create(:user)).to be_valid
    end
@@ -29,7 +30,8 @@ RSpec.describe User, type: :model do
     expect(FactoryGirl.build(:user, email: nil)).to_not be_valid
    end
 
-   it  "   " do
+
+   it  " " do
 
    end
 
