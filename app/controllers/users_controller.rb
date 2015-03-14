@@ -17,24 +17,25 @@ class UsersController < ApplicationController
     
      
     @user = User.find(params[:id])
-    # @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=San+Francisco,ca&mode=JSON&APPID=c64fb5dceb58cb7f615da8f7dc80ec70').parsed_response["list"]
-    # if @weather
-    #     @weathers = Array.new
-    #     i = 0
-    #    while i <= 5 do 
-    #       @weathers.push(@weather[i]["weather"][0]["main"])
-    #      i +=1
-    #    end
-    #    if @weathers.include? 'rain'
-    #       @forecast = "Looks like rain!"
-    #     else
-    #       @forecast = "Clear skies! Happy driving!"
-    #     end
-    #     # format.html # show.html.erb
-    #      respond_with @user 
-    # else
-    #   @forecast = "Our weatherman is out to lunch"
-    # end
+    @weather = HTTParty.get('http://api.wunderground.com/api/dbd5fb36b3fdfa70/forecast/q/CA/Santa_Monica.json').parsed_response["forecast"]["simpleforecast"]["forecastday"]
+    
+    if @weather
+        @weathers = Array.new
+        i = 0
+       while i <= 3 do 
+          @weathers.push(@weather[i]["conditions"])
+         i +=1
+       end
+       if @weathers.include? 'rain'
+          @forecast = "Looks like rain!"
+        else
+          @forecast = "Clear skies! Happy driving!"
+        end
+        # format.html # show.html.erb
+         respond_with @user 
+    else
+      @forecast = "Our weatherman is out to lunch"
+    end
   end
     
   def edit

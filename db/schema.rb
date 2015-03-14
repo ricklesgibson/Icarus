@@ -64,13 +64,6 @@ ActiveRecord::Schema.define(version: 20150312042118) do
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.string   "email"
-    t.string   "street_address"
-    t.string   "city"
-    t.string   "state"
-    t.integer  "zip"
-    t.string   "phone"
-    t.integer  "payment_id"
-    t.integer  "car_id"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"

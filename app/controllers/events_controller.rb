@@ -5,10 +5,12 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
+    @user = current_user
   end
 
   def show
     @event = Event.find(params[:id])
+    @user = current_user
   end
 
   def create
@@ -34,6 +36,9 @@ class EventsController < ApplicationController
   end
 
 private
+ def set_user
+      @user = User.find(params[:id])
+  end
     def set_event
       @event = Event.find(params[:id])
     end
