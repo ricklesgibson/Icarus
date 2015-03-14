@@ -1,3 +1,6 @@
+<%= render "layouts/nav" %>
+<div class="container">
+
 <%= form_for(@event) do |f| %>
 
         <div class="field">
@@ -18,3 +21,4 @@
           <%= f.submit "Create An Event", class: "btn btn-primary" %>
         </div>
       <% end %>
+</div>

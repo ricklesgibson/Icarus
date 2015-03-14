@@ -1,0 +1,10 @@
+# Add configuration values here, as shown below.
+
+
+GMAIL_USERNAME: ricklesgibson@gmail.com
+GMAIL_PASSWORD: gibson85alphatango
+
+S3_SIMPLY_BUCKET: icarusbucket
+S3_KEY: AKIAIFZRA2GC4RLOAVLQ
+S3_SECRET: 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
+# GMAPS_API_KEY: AIzaSyCnKu_jgX1HO78RP-td7d9uvup_TkmJg2k

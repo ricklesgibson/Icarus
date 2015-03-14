@@ -11,8 +11,10 @@
 <%= @user.email %><br />
 <%= @user.phone %><br />
 <%= @user.street_address %><br />
+<%= image_tag @user.avatar.url(:icon) if @user.avatar.url != "/images/original/missing.png"%>
 <hr />
 <%= @forecast %>
+
 
 
 </h2>

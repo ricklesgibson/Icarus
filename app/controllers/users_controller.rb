@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   respond_to :json, :html
 
+  def welcome
+    @user = current_user
+  end
+
   def index
     @users = User.all 
     respond_with @users
@@ -13,24 +17,24 @@ class UsersController < ApplicationController
     
      
     @user = User.find(params[:id])
-    @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=San+Francisco,ca&mode=JSON&APPID=c64fb5dceb58cb7f615da8f7dc80ec70').parsed_response["list"]
-    if @weather
-        @weathers = Array.new
-        i = 0
-       while i <= 5 do 
-          @weathers.push(@weather[i]["weather"][0]["main"])
-         i +=1
-       end
-       if @weathers.include? 'rain'
-          @forecast = "Looks like rain!"
-        else
-          @forecast = "Clear skies! Happy driving!"
-        end
-        # format.html # show.html.erb
-         respond_with @user 
-    else
-      @forecast = "Our weatherman is out to lunch"
-    end
+    # @weather = HTTParty.get('http://api.openweathermap.org/data/2.5/forecast?q=San+Francisco,ca&mode=JSON&APPID=c64fb5dceb58cb7f615da8f7dc80ec70').parsed_response["list"]
+    # if @weather
+    #     @weathers = Array.new
+    #     i = 0
+    #    while i <= 5 do 
+    #       @weathers.push(@weather[i]["weather"][0]["main"])
+    #      i +=1
+    #    end
+    #    if @weathers.include? 'rain'
+    #       @forecast = "Looks like rain!"
+    #     else
+    #       @forecast = "Clear skies! Happy driving!"
+    #     end
+    #     # format.html # show.html.erb
+    #      respond_with @user 
+    # else
+    #   @forecast = "Our weatherman is out to lunch"
+    # end
   end
     
   def edit
