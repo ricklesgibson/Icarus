@@ -1,10 +1,17 @@
 <%= render "layouts/nav" %>
 <div class="container">
 
-    <%= @event.id %>
-    <%= @event.location %>
-    <%= @event.start_time %>
-    <%= @event.end_time %>
-    <%= @event.user_id %>
+	<div class="row col-md-12">
+		<p>Your Tesla is on the way!</p>
+	</div>
+
+  <div class="row col-md-12" id="map-input">
+    <%= @event.location %><br>
+    <%= @event.city %>, <%= @event.state %> <%= @event.zip %>
+  </div>
 
 </div>  
+
+<div class="container-fluid">
+	<div id="map-canvas"></div>
+</div>
