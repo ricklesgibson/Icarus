@@ -31,7 +31,7 @@
             <li> <%= link_to "Log out", sessions_path, method: :delete %></li>
             <li> <%= link_to "Edit Page", edit_user_path(current_user)%></li>
             <li> <%= link_to "View Page", user_path(current_user)%></li>
-            <li> <%= image_tag @user.avatar.url(:icon) if (@user.avatar.url != "/images/original/missing.png" && @user.avatar.url != nil )%> </li>
+            <li> <%= image_tag current_user.avatar.url(:icon) if (current_user.avatar.url != "/images/original/missing.png" && current_user.avatar.url != nil )%> </li>
            <li> <%#= link_to "#{@user.first_name}", "#" %></li>
 
           <% else %>

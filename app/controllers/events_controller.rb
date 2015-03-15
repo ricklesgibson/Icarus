@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   def index
-    @event = Event.all
+    @events = Event.all
+    @event = Event.where(user_id:current_user.id)
   end
 
   def new
@@ -19,7 +20,7 @@ class EventsController < ApplicationController
 
       if event.save
     
-      redirect_to events_path
+      redirect_to event_path(event)
     else 
       redirect_to new_events_path
     end
@@ -44,6 +45,6 @@ private
     end
 
     def event_params
-      params.require(:event).permit(:event, :start_time, :end_time, :location, :user_id)
+      params.require(:event).permit(:event, :start_time, :end_time, :location, :user_id, :city, :state, :zip)
     end
 end
